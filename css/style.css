@@ -1,9 +1,27 @@
 /* MAIN ELEMENTS */
 
 body {
-  background: linear-gradient(to bottom, #ffffff 0%,#3c00f2 100%);
+  background: linear-gradient(to bottom, #ffffff 0%,#FF0000 100%);
 
 }
+
+#top, #bottom, #left, #right {
+	background: #FF0000;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
 
 header {
   font-family:'Akkurat pro', sans-serif;
@@ -40,6 +58,7 @@ p {
   line-height:8px;
   color:blue;
   font-size:12px;
+  font-weight:bold;
 }
 #content a{
   color:blue;
