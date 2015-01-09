@@ -1,9 +1,10 @@
 /* MAIN ELEMENTS */
 
 body {
-  background: linear-gradient(to bottom, #ffffff 0%,#FF0000 100%);
-
+  background: linear-gradient(to bottom, #FFFFFF 0%,#FFFF00 100%);
+cursor: url(http://icons.iconarchive.com/icons/iconfactory/copland-4/32/Hotdog-icon.png), auto;
 }
+
 
 #top, #bottom, #left, #right {
 	background: #FF0000;
@@ -35,7 +36,18 @@ header {
 
 }
 
-p {
+/*p {
+  font-family:'franklin gothic book';
+  color:black;
+  padding-right:200px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-indent: 10px;
+}
+*/
+
+#text	{
+  
   font-family:'franklin gothic book';
   color:white';
   padding-right:200px;
@@ -43,8 +55,16 @@ p {
   line-height: 20px;
   text-indent: 10px;
 }
-	
 
+
+@media all and (max-width: 300px) {
+    #text {
+    font-size: 11px;
+    font-style: italic;
+    padding-right:10px;
+    color:white;
+    }
+}
 
 /* TABLE OF CONTENTS */
 
@@ -128,6 +148,40 @@ h1{
 #h2{
   font-family:'Akkurat pro', sans-serif;
   font-weight:normal;
-  text-align:right;
+  text-align:center;
   color:blue;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+a	{
+	color:black;
+	
+}	
+
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:20px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:60px; 
+    margin-left:-160px;
+    width:300px; 
+  font-family:'franklin gothic book';
+  color:white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:13px;
+  
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; 
+    background:red;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
 }
