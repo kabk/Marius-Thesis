@@ -56,6 +56,16 @@ header {
   text-indent: 10px;
 }
 
+#text2	{
+  
+  font-family:'franklin gothic book';
+  color:white';
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-indent: 10px;
+}
+
+
 
 @media all and (max-width: 300px) {
     #text {
@@ -67,6 +77,17 @@ header {
 }
 
 /* TABLE OF CONTENTS */
+
+#back	{
+	position:fixed;
+	left:5px;
+	font-family:'Akkurat pro', sans-serif;
+  	text-align:left;
+  	color:blue;
+  	top:5px;
+  	font-size:30px;
+	
+}
 
 #fixed{
   position:fixed;
@@ -80,6 +101,8 @@ header {
   font-size:12px;
   font-weight:bold;
 }
+
+
 #content a{
   color:blue;
   font-family:'franklin gothic book';
