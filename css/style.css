@@ -162,6 +162,8 @@ a	{
 	
 }	
 
+
+
 a.tooltip {outline:none; }
 a.tooltip strong {line-height:20px;}
 a.tooltip:hover {text-decoration:none;} 
@@ -181,6 +183,31 @@ a.tooltip span {
 a.tooltip:hover span{
     display:inline; position:absolute; 
     background:red;
+}
+.callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
+
+}
+
+a.tooltip2 {outline:none; }
+a.tooltip strong2 {line-height:20px;}
+a.tooltip2:hover {text-decoration:none;} 
+a.tooltip2 span {
+    z-index:10;display:none; 
+    padding:14px 20px;
+    margin-top:60px; 
+    margin-left:-160px;
+    width:300px; 
+  font-family:'franklin gothic book';
+  color:white;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size:13px;
+  
+  
+}
+a.tooltip2:hover span{
+    display:inline; position:absolute; 
+    background:blue;
 }
 .callout {z-index:20;position:absolute;border:0;top:-14px;left:120px;}
 
