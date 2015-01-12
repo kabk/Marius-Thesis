@@ -90,6 +90,8 @@ header {
 	
 }
 
+
+
 #fixed{
   position:fixed;
   left:-30px;
@@ -143,10 +145,17 @@ header {
 
 
 
+marquee {
+	position:absolute;
+	z-index:1;
+}
 
 
 
 /* BACK TO TOP BUTTON */
+
+
+
 
 .totop{
   position:fixed;
