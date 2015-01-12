@@ -2,12 +2,42 @@
 /*   visit us at http://www.hscripts.com     */
 /*   This is a copyright product of hioxindia.com */
 
+var pickRandom = function(list) {
+    // This function takes a list, and returns a random element
+    // from the list
+    var index = Math.floor( Math.random() * list.length );
+    return list[index];
+}
 
+var images = ["FOTOS/ETEN/40px-Pesto_Pasta-icon.png",
+"FOTOS/ETEN/92.png",
+"FOTOS/ETEN/Bacon-Egg-icon.png",
+"FOTOS/ETEN/bananas-icon.png",
+"FOTOS/ETEN/Coffee.png",
+"FOTOS/ETEN/Cramb-icon.png",
+"FOTOS/ETEN/Farm-Fresh_cake.png",
+"FOTOS/ETEN/FriedChicken-icon.png",
+"FOTOS/ETEN/ham.png",
+"FOTOS/ETEN/Hamburger-icon.png",
+"FOTOS/ETEN/Hotdog-icon.png",
+"FOTOS/ETEN/Icon_sausage.png",
+"FOTOS/ETEN/pizza-icon.png",
+"FOTOS/ETEN/pizza.png",
+"FOTOS/ETEN/Salad-icon.png",
+"FOTOS/ETEN/Sandwich-icon.png",
+"FOTOS/ETEN/steak_fish.png",
+"FOTOS/ETEN/steak-icon.png",
+"FOTOS/ETEN/Sushi-9-icon.png",
+"FOTOS/ETEN/Tacos-icon.png"]
 
-//var image="FOTOS/FriedChicken-icon.png";  //Image path should be given here
-var no = 2; // No of images should fall
+var image = function() {
+	return pickRandom(images);
+}
+
+//var image="FOTOS/ETEN/Bacon-Egg-icon.png";  //Image path should be given here
+var no = 3; // No of images should fall
 var time = 0; // Configure whether image should disappear after x seconds (0=never):
-var speed = 40; // Fix how fast the image should fall
+var speed = 50; // Fix how fast the image should fall
 var i, dwidth = 900, dheight =500; 
 var nht = dheight;
 var toppos = 0;
@@ -97,7 +127,7 @@ for (i = 0; i < no; ++ i) {
 	am[i] = Math.random()*20;         // set amplitude variables
 	sx[i] = 0.02 + Math.random()/10;  // set step variables
 	sy[i] = 0.7 + Math.random();    // set step variables
-	document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px;LEFT: 15px;\"><img src='"+image+"' border=\"0\"><\/div>");
+	document.write("<div id=\"dot"+ i +"\" style=\"POSITION: absolute; Z-INDEX: "+ i +"; VISIBILITY: visible; TOP: 15px;LEFT: 15px;\"><img src='"+image()+"' border=\"0\"><\/div>");
 }
 
 function animation() {  // animation function

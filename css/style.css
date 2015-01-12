@@ -5,6 +5,9 @@ body {
 cursor: url(http://icons.iconarchive.com/icons/iconfactory/copland-4/32/Hotdog-icon.png), auto;
 }
 
+#eten {
+	z-index:1;
+}
 
 #top, #bottom, #left, #right {
 	background: #FF0000;
@@ -33,6 +36,7 @@ header {
   position:fixed;
   right:0;
   top:0;
+  z-index:2;
 
 }
 
@@ -55,6 +59,7 @@ header {
   line-height: 20px;
   text-indent: 10px;
   cursor: url(http://icons.iconarchive.com/icons/iconmuseo/fast-food/32/pizza-icon.png), auto;
+  z-index:2;
 }
 
 #text2	{
@@ -192,7 +197,7 @@ h1{
 
 a	{
 	color:black;
-	cursor:url(http://icons.iconarchive.com/icons/iconmuseo/fast-food/32/burger-2-icon.png), auto;
+	cursor:url(http://icons.iconarchive.com/icons/iron-devil/ids-3d-icons-20/32/Hamburger-icon.png), auto;
 	
 }	
 
