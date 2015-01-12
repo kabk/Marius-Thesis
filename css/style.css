@@ -101,13 +101,15 @@ header {
   position:fixed;
   left:-30px;
   top:0;
+  font-family:'Open Sans Pro';
 }
 
 #content{
   line-height:8px;
   color:blue;
   font-size:12px;
-  font-weight:bold;
+  font-weight:normal;
+  font-family:'Open Sans Pro';
 }
 
 
