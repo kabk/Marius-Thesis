@@ -10,7 +10,6 @@ var pickRandom = function(list) {
 }
 
 var images = ["FOTOS/ETEN/40px-Pesto_Pasta-icon.png",
-"FOTOS/ETEN/92.png",
 "FOTOS/ETEN/Bacon-Egg-icon.png",
 "FOTOS/ETEN/bananas-icon.png",
 "FOTOS/ETEN/Coffee.png",
@@ -18,10 +17,7 @@ var images = ["FOTOS/ETEN/40px-Pesto_Pasta-icon.png",
 "FOTOS/ETEN/Farm-Fresh_cake.png",
 "FOTOS/ETEN/FriedChicken-icon.png",
 "FOTOS/ETEN/ham.png",
-"FOTOS/ETEN/Hamburger-icon.png",
-"FOTOS/ETEN/Hotdog-icon.png",
 "FOTOS/ETEN/Icon_sausage.png",
-"FOTOS/ETEN/pizza-icon.png",
 "FOTOS/ETEN/pizza.png",
 "FOTOS/ETEN/Salad-icon.png",
 "FOTOS/ETEN/Sandwich-icon.png",
